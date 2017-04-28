@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="zh-tw">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 </head>
-<body>
-	<form action="123.jsp"  name="test" method="get" >
+<body align="center">
+	<form action="123.jsp"  name="test" method="post" >
 			姓:<br>
-			<input type="text" name="lastname" value="曾">
+			<input type="text" name="lastname" value="">
 			<br>
 			名:<br>
-			<input type="text" name="firstname" value="英俊">
+			<input type="text" name="firstname" value="">
 			</br>
 			</br>
 			性別:
-			<input Type="radio" Name="gender" value="男">男
-			<input Type="radio" Name="gender" value="女" checked>女</br>
+			<input Type="radio" Name="gender" value="男" checked>男
+			<input Type="radio" Name="gender" value="女">女</br>
 			</br>
 			年級:
 			</br>
-			<select name="grade">
+			<select name="grade" required>
 				<option value="一年級">一年級</option>
 				<option value="二年級">二年級</option>
 				<option value="三年級">三年級</option>
@@ -29,9 +29,9 @@
 			</select>
 			</br>
 			</br>
-			管院:
+			管院 (請至少選擇一個):
 			</br>
-			<select name="department" size="4" multiple>
+			<select name="department" size="4" multiple required>
 				<option value="管理學院">管理學院</option>
 				<option value="文學院">文學院</option>
 				<option value="工學院">工學院</option>
@@ -47,8 +47,7 @@
 			<input Type="checkbox" Name="intrest" value="看書">看書</br>
 			</br>
 		自我介紹:</br>
-		<textarea rows="4" cols="50" Name="self">
-		</textarea>
+		<textarea rows="4" cols="50" Name="self"></textarea>
 
 		</br><input type="submit"  value="Submit">
 
